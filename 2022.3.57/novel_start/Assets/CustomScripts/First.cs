@@ -55,17 +55,60 @@ To destroy all the engine services and completely remove Naninovel from memory, 
     {
         if (GUILayout.Button("init engine"))
         {
-            RuntimeInitializer.Initialize();
-            // Engine may not be initialized here, so check first.
-            if (Engine.Initialized) DoMyCustomWork();
-            else
-                Engine.OnInitializationFinished +=
-                    DoMyCustomWork;
+            CustomInit();
         }
         
         if (GUILayout.Button("ResetService"))
         {
             ResetService();
         }
+        
+        if (GUILayout.Button("CustomStart"))
+        {
+            CustomStart();
+        }
     }
+    
+    private async UniTask CustomInit()
+    {
+        await RuntimeInitializer.Initialize();
+        var manager = Engine.GetService<IUIManager>();
+        if (manager.HasUI("TitleUI"))
+        {
+            Debug.Log("has title UI 2");
+            manager.GetUI("TitleUI").ChangeVisibility(false);
+        }
+
+        // Engine may not be initialized here, so check first.
+        if (Engine.Initialized) DoMyCustomWork();
+        else
+            Engine.OnInitializationFinished +=
+                DoMyCustomWork;
+    }
+    
+    private async UniTask CustomStart()
+    {
+        /*
+        var manager = Engine.GetService<IUIManager>();
+        if (manager.HasUI("TitleUI"))
+        {
+            Debug.Log("has title UI 1");
+        }
+        */
+        
+        // 1. Initialize Naninovel.
+        //await RuntimeInitializer.InitializeAsync();
+        await RuntimeInitializer.Initialize();
+        var manager = Engine.GetService<IUIManager>();
+        if (manager.HasUI("TitleUI"))
+        {
+            Debug.Log("has title UI 2");
+            manager.GetUI("TitleUI").ChangeVisibility(false);
+        }
+        
+        // 2. Enter adventure mode.
+        var switchCommand = new SwitchToAdventureMode { ResetState = false };
+        await switchCommand.ExecuteAsync();
+    }
+    
 }
