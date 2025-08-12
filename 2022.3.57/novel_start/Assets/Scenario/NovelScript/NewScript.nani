@@ -1,5 +1,72 @@
-@bgm CloudNine
-@back Beach
+@printer Wide
+; @printer Bubble.Right pos:50,50 !hideOther
+@bgm Wind fade:1 wait:false
+@spawn SunShafts params:0.5 wait:false
+
+@back Desert time:1
+@wait 1
+...
+@char n pos:75,-100 time:0
+@hide n time:0
+@sfx Paper volume:0.5
+@char n pos:75,-85
+@wait 1.5
+@sfx FabricRightToLeft
+@wait 0.15
+@char n look:right pos:25,-75
+@wait 0.35
+@sfx Paper
+@spawn ShakeCharacter params:n,1,0.3,0,0.5,0
+@wait 0.5
+@sfx Paper
+@char n look:left pos:35,-80
+@stopSfx Paper wait:false
+...
+@hidePrinter 
+@sfx FabricLeftToRight
+@wait 0.15
+@char n look:right pos:85,-55
+@wait 0.5
+@sfx Paper volume:0.5
+@char n look:left pos:85,-45
+@sfx Paper
+@char n.Surprise wait:false
+@spawn ShakeCharacter params:n,1,0.15,0,0.3,0 wait:false
+@wait 0.5
+@char n.Default pos:50,-10 wait:false
+@stopBgm Wind fade:5 wait:false
+@bgm CloudNine fade:1 wait:false
+@wait 0.25
+...
+n: Oh, hey there!
+n: Welcome to the demo![i] I'll show what you can achieve with Naninovel along with some brief tutorials.
+n: By the way, this whole demo is done entirely with Naninovel, without even a line of code.
+n: Shall we get started then?
+@save
+...
+@char n pos:50,-10 time:0
+
+n: Imagine you've imported Naninovel package to your Unity project.
+n: [i][char b.CreateScript transition:Ripple time:1 pos:{pos} wait:false][char n pos:80 time:0.5 wait:false] 
+n: For starters, create a <b>naninovel script</b>.
+n: [i] Naninovel scripts are text documents where you control what happens on scenes.
+n: [i] Open them with a text editor of your choice, like Notepad, Word or Atom.
+
+@char b.OpenScript transition:Ripple time:1 wait:false
+n: For example, here is the contents of a naninovel script used for this demo so far.[i] Don't worry if it looks complicated, I'll show how it works step by step a bit later.
+
+@hide b wait:false
+n: Now, open the script in a text editor.[i][char b.HelloWorld transition:Ripple time:1 pos:{pos} wait:false] Let's start with showing a simple text. Simply type the text you wish to show, like this.[i] Enter play mode and start new game to see the result.[skipInput]
+
+@choice "Hello World!" goto:.Hello
+@stop
+...
+
+
+
+
+; @bgm CloudNine
+; @back Beach
 Hello World1
 @back Rain.RadialBlur
 Hello World2

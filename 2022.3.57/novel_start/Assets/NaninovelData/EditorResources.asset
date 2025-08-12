@@ -177,6 +177,9 @@ MonoBehaviour:
     - name: Snow
       pathPrefix: Backgrounds/MainBackground
       guid: 079732e171579fc4594b2bb000405c0c
+    - name: Desert
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2507f9e1467df384e841be5680fe39af
   - Id: Backgrounds/94befc3f-97c8-4084-a84b-a94605a9fac1
     Resources:
     - name: Flower01
@@ -217,3 +220,45 @@ MonoBehaviour:
     - name: Wind
       pathPrefix: Audio
       guid: 9142a928e3b72e049b941b4ae1bb67ac
+  - Id: Characters/6f6608b8-1657-4c08-bcf0-b59101057eba
+    Resources:
+    - name: Confidence
+      pathPrefix: Characters/n
+      guid: 4ae4311c9cd60cb4482b02705e43935c
+    - name: Default
+      pathPrefix: Characters/n
+      guid: 8c1a754940eaa524b8d66d4e06fed3aa
+    - name: Happy
+      pathPrefix: Characters/n
+      guid: 7240628b1bf07a642955bcb15d918a9a
+    - name: Pain
+      pathPrefix: Characters/n
+      guid: 16eed8a7bf05cad4ea3bd3929a2a321e
+    - name: Surprise
+      pathPrefix: Characters/n
+      guid: 3ce9674d67f8afa48853930cc7804043
+  - Id: CharacterAvatars
+    Resources:
+    - name: n/Default
+      pathPrefix: CharacterAvatars
+      guid: 69de4b329b83c9f488da2b8ee998b1ba
+  - Id: Characters/2e2597e2-04a8-4297-99fc-874e0bc75fa1
+    Resources:
+    - name: AddCharacter
+      pathPrefix: Characters/b
+      guid: 414ef72caf3b2af46b9283009b356b67
+    - name: CreateScript
+      pathPrefix: Characters/b
+      guid: 4f2cc2d7b59536a47967a5d6d38d3a48
+    - name: HelloWorld
+      pathPrefix: Characters/b
+      guid: 882ca63af3dfcad40803d84bcdf39c4e
+    - name: Name
+      pathPrefix: Characters/b
+      guid: b237e73333b669a43a4ffd93e350c9cf
+    - name: OpenScript
+      pathPrefix: Characters/b
+      guid: b4344eb0e9be56c409f5cf00f52d6bf9
+    - name: ShowCharacter
+      pathPrefix: Characters/b
+      guid: dd69ddc5ebbead641a667a45dc4b86fa
