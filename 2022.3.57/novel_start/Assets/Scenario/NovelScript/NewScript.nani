@@ -1,0 +1,7 @@
+hello world
+hellow world 002
+@showUI CustomUI
+hellow world 003
+@set TextLabel_1="@@@"
+hellow world 004
+@stop

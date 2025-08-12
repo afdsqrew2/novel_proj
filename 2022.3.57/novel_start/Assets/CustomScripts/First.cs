@@ -6,17 +6,14 @@ public class First : MonoBehaviour
 {
     private void Awake()
     {
-        // Engine may not be initialized here, so check first.
-        if (Engine.Initialized) DoMyCustomWork();
-        else
-            Engine.OnInitializationFinished +=
-                DoMyCustomWork;
+
     }
 
     private void DoMyCustomWork()
     {
-        Debug.Log(
-            "Engine is initialized here, it's safe to use the APIs");
+        Engine.OnInitializationFinished -=
+            DoMyCustomWork;
+        Debug.Log("My Custom Work");
         // Engine is initialized here, it's safe to use the APIs.
         var scriptPlayer =
             Engine.GetService<IScriptPlayer>();
@@ -59,6 +56,11 @@ To destroy all the engine services and completely remove Naninovel from memory, 
         if (GUILayout.Button("init engine"))
         {
             RuntimeInitializer.Initialize();
+            // Engine may not be initialized here, so check first.
+            if (Engine.Initialized) DoMyCustomWork();
+            else
+                Engine.OnInitializationFinished +=
+                    DoMyCustomWork;
         }
         
         if (GUILayout.Button("ResetService"))
