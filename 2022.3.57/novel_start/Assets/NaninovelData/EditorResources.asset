@@ -149,12 +149,12 @@ MonoBehaviour:
       guid: dd23fff3bcb496c4f979849f83c52420
   - Id: Scripts
     Resources:
-    - name: NovelScript/NewScript
-      pathPrefix: Scripts
-      guid: 3caa93b3e3c770f49bacad19020d0340
     - name: NovelScript/Script001
       pathPrefix: Scripts
       guid: 7601f7b4952b93e42bb7b53f85ee6400
+    - name: NovelScript/NewScript
+      pathPrefix: Scripts
+      guid: 3caa93b3e3c770f49bacad19020d0340
   - Id: Characters/288ca486-f27e-466a-815e-3a37b3ba57f9
     Resources:
     - name: Default

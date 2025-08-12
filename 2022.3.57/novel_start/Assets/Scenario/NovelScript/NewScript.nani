@@ -47,7 +47,8 @@ n: Shall we get started then?
 @char n pos:50,-10 time:0
 
 n: Imagine you've imported Naninovel package to your Unity project.
-n: [i][char b.CreateScript transition:Ripple time:1 pos:{pos} wait:false][char n pos:80 time:0.5 wait:false] 
+; n: [i][char b.CreateScript transition:Ripple time:1 pos:{pos} wait:false][char n pos:80 time:0.5 wait:false] 
+n: [i][char b.CreateScript transition:Ripple time:1 pos:50,25 wait:false][char n pos:80 time:0.5 wait:false] 
 n: For starters, create a <b>naninovel script</b>.
 n: [i] Naninovel scripts are text documents where you control what happens on scenes.
 n: [i] Open them with a text editor of your choice, like Notepad, Word or Atom.
@@ -56,13 +57,28 @@ n: [i] Open them with a text editor of your choice, like Notepad, Word or Atom.
 n: For example, here is the contents of a naninovel script used for this demo so far.[i] Don't worry if it looks complicated, I'll show how it works step by step a bit later.
 
 @hide b wait:false
-n: Now, open the script in a text editor.[i][char b.HelloWorld transition:Ripple time:1 pos:{pos} wait:false] Let's start with showing a simple text. Simply type the text you wish to show, like this.[i] Enter play mode and start new game to see the result.[skipInput]
+n: Now, open the script in a text editor.
+; n: [i][char b.HelloWorld transition:Ripple time:1 pos:{pos} wait:false] 
+n: [i][char b.HelloWorld transition:Ripple time:1 pos:50 wait:false]
+n: Let's start with showing a simple text. Simply type the text you wish to show, like this.[i] Enter play mode and start new game to see the result.[< skip!]
 
 @choice "Hello World!" goto:.Hello
 @stop
 ...
+# Hello
+Hello World!
 
+@hide b wait:false
+...
+; n: Easy, right?[i][char b.Name transition:Ripple time:1 pos:{pos} wait:false] To associate shown text with a character, just add its name 
+n: Easy, right?[i][char b.Name transition:Ripple time:1 pos:50,25 wait:false] To associate shown text with a character, just add its name 
+followed by a colon before the text.[< skip!]
 
+@choice "John: Hello World!" goto:.John
+@stop
+
+# John
+John: Hello World!
 
 
 ; @bgm CloudNine

@@ -225,9 +225,9 @@ MonoBehaviour:
   onStringChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2121063160656872965}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: set_name
+      - m_Target: {fileID: 789223222522300592}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
