@@ -15,26 +15,44 @@ public class SwitchToNovelMode : Command
     
     public override async UniTask Execute(AsyncToken token = default)
     {
+        Debug.Log("execute 1");
         // 1. Disable character control.
         var controller = Object.FindObjectOfType<CharacterController3D>();
-        controller.IsInputBlocked = true;
-
+        if (controller)
+        {
+            controller.IsInputBlocked = true;
+        }
+        Debug.Log("execute 2");
         // 2. Switch cameras.
-        var advCamera = GameObject.Find("AdventureModeCamera").GetComponent<Camera>();
-        advCamera.enabled = false;
+        var go = GameObject.Find("AdventureModeCamera");
+        if (go != null)
+        {
+            var advCamera = go.GetComponent<Camera>();
+            advCamera.enabled = false;
+        }
+        Debug.Log("execute 3");
         var naniCamera = Engine.GetService<ICameraManager>().Camera;
         naniCamera.enabled = true;
-
+        Debug.Log("execute 4");
         // 3. Load and play specified script (is required).
         if (Assigned(ScriptName))
         {
+            Debug.Log("execute 41");
             var scriptPlayer = Engine.GetService<IScriptPlayer>();
+            Debug.Log("execute 42");
+            if (scriptPlayer == null)
+            {
+                Debug.Log("execute 421");
+            }
+
             await scriptPlayer.LoadAndPlayAtLabel(ScriptName, label: Label);
+            Debug.Log("execute 43");
             //await scriptPlayer.PreloadAndPlayAsync(ScriptName, label: Label);
         }
-
+        Debug.Log("execute 5");
         // 4. Enable Naninovel input.
         var inputManager = Engine.GetService<IInputManager>();
-        inputManager.ProcessInput = true;
+        if (inputManager != null)
+            inputManager.ProcessInput = true;
     }
 }

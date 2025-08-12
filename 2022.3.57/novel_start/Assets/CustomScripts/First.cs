@@ -67,6 +67,13 @@ To destroy all the engine services and completely remove Naninovel from memory, 
         {
             CustomStart();
         }
+        
+        if (GUILayout.Button("switch2NovelModel"))  
+        {
+  
+            var switchCommand = new SwitchToNovelMode {ScriptName = "NovelScript/Script002", Label = "Label1"};
+            switchCommand.Execute().Forget();
+        }
     }
     
     private async UniTask CustomInit()
