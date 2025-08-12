@@ -1,7 +1,17 @@
+@bgm CloudNine
+@back Beach
+Hello World1
+@back Rain.RadialBlur
+Hello World2
+@back Flower01 id:Flower
+Hello World3
+@back Flower02 id:Flower
+
 @char Koha
 Hello World!
-hello world
+Koha.Angry: show Angry
 hellow world 002
+@hide Koha
 @showUI CustomUI
 hellow world 003
 @set TextLabel_1="@@@"

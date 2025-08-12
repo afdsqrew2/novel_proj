@@ -158,11 +158,62 @@ MonoBehaviour:
   - Id: Characters/288ca486-f27e-466a-815e-3a37b3ba57f9
     Resources:
     - name: Default
-      pathPrefix: Characters/koha
+      pathPrefix: Characters/Koha
       guid: b199676cfa2c48449bc8a10296f859ea
     - name: Angry
-      pathPrefix: Characters/koha
+      pathPrefix: Characters/Koha
       guid: 3eb2f3cda74a8f54190bd19e4822507f
     - name: Confidence
-      pathPrefix: Characters/koha
+      pathPrefix: Characters/Koha
       guid: 8bf71bff857c18d42a8f7cd5629d8a78
+  - Id: Backgrounds/48784d32-ba13-4ec4-86dd-16c3e13c2271
+    Resources:
+    - name: Beach
+      pathPrefix: Backgrounds/MainBackground
+      guid: 7abd19485e14ecd4584ad3a3122b8553
+    - name: Rain
+      pathPrefix: Backgrounds/MainBackground
+      guid: 44bad6285282023448cc996c68d2a5a5
+    - name: Snow
+      pathPrefix: Backgrounds/MainBackground
+      guid: 079732e171579fc4594b2bb000405c0c
+  - Id: Backgrounds/94befc3f-97c8-4084-a84b-a94605a9fac1
+    Resources:
+    - name: Flower01
+      pathPrefix: Backgrounds/Flower
+      guid: fb308d78d8746474e99ec6fed271be47
+    - name: Flower02
+      pathPrefix: Backgrounds/Flower
+      guid: d4a4c5b26333338439fd3b78cfb701ec
+    - name: Flower03
+      pathPrefix: Backgrounds/Flower
+      guid: d0893b7d3bcbf8c4f806e5543cec2a32
+  - Id: Audio
+    Resources:
+    - name: Bubbles
+      pathPrefix: Audio
+      guid: bbef9a106e6ec8542a6a635d67da7ae9
+    - name: CloudNine
+      pathPrefix: Audio
+      guid: 466a21c6e24020845af5ed1b7b5a4e19
+    - name: FabricLeftToRight
+      pathPrefix: Audio
+      guid: e84f7b4fd97ade6438754a204fc30bf0
+    - name: FabricRightToLeft
+      pathPrefix: Audio
+      guid: e90beefc590597f469c7668f7eb65d43
+    - name: Glitch
+      pathPrefix: Audio
+      guid: 86fd82236f7d5aa4a91ad58741849276
+    - name: Glitter
+      pathPrefix: Audio
+      guid: 3f2f4af8b1c8cfc4bab351ff5fadc4d4
+    - name: JellyRolls
+      pathPrefix: Audio
+      guid: 071b73edd7c39f540ad21ea0326340b9
+    - name: Paper
+      pathPrefix: Audio
+      guid: 025df2da31db07e42bd7b56b186d74de
+    - name: Wind
+      pathPrefix: Audio
+      guid: 9142a928e3b72e049b941b4ae1bb67ac
