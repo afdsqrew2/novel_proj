@@ -155,3 +155,14 @@ MonoBehaviour:
     - name: NovelScript/Script001
       pathPrefix: Scripts
       guid: 7601f7b4952b93e42bb7b53f85ee6400
+  - Id: Characters/288ca486-f27e-466a-815e-3a37b3ba57f9
+    Resources:
+    - name: Default
+      pathPrefix: Characters/koha
+      guid: b199676cfa2c48449bc8a10296f859ea
+    - name: Angry
+      pathPrefix: Characters/koha
+      guid: 3eb2f3cda74a8f54190bd19e4822507f
+    - name: Confidence
+      pathPrefix: Characters/koha
+      guid: 8bf71bff857c18d42a8f7cd5629d8a78
