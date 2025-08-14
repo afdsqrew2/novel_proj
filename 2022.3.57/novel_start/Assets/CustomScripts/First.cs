@@ -39,7 +39,7 @@ public class First : MonoBehaviour
         var scriptPlayer =
             Engine.GetService<IScriptPlayer>();
         await scriptPlayer.LoadAndPlay(
-            "NovelScript/Script001");
+            "NovelScript/Script003");
     }
     /*
     Disabling Scene Independent option will make all

@@ -155,6 +155,12 @@ MonoBehaviour:
     - name: NovelScript/NewScript
       pathPrefix: Scripts
       guid: 3caa93b3e3c770f49bacad19020d0340
+    - name: NovelScript/Script002
+      pathPrefix: Scripts
+      guid: 6ef38c13cf61bcf4899d3c439f43a8f0
+    - name: NovelScript/Script003
+      pathPrefix: Scripts
+      guid: f22f68166137f2a43b6fbd03422dd573
   - Id: Characters/288ca486-f27e-466a-815e-3a37b3ba57f9
     Resources:
     - name: Default
@@ -262,3 +268,8 @@ MonoBehaviour:
     - name: ShowCharacter
       pathPrefix: Characters/b
       guid: dd69ddc5ebbead641a667a45dc4b86fa
+  - Id: Backgrounds/4f0c6a63-706f-4e1e-9288-c111819cb5b7
+    Resources:
+    - name: Perspective
+      pathPrefix: Backgrounds
+      guid: c839b15e45876854ebbc0a2f0e97443d
